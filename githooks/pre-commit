@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+
+<?php
+
+if( 
+    file_exists(__DIR__.'/../artisan')
+    && file_exists(__DIR__.'/../fixcs.sh')
+    ){
+  exec(__DIR__.'/../fixcs.sh');
+}
+
+exit(0);

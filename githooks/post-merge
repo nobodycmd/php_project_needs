@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+
+<?php
+
+if(file_exists(__DIR__.'/../artisan')){
+  exec(__DIR__.'/../artisan migrate');
+}
+
+exit(0);
